@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Smart Mobility Le Mans — SETRAM network status</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+  .kpis { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0; }
+  .kpi { flex: 1; min-width: 180px; padding: 0.8rem 1rem; border: 1px solid #ccc; border-radius: 8px; }
+  .kpi .value { font-size: 1.6rem; font-weight: bold; color: #0d7c9e; }
+  .kpi .label { font-size: 0.8rem; color: #666; }
+  #alerts { padding: 0.8rem 1rem; border: 2px solid #c46e0a; border-radius: 8px; background: #faf3e8; }
+  #alerts.none { border-color: #2c9c4a; background: #f0f8f2; }
+  canvas { margin-top: 2rem; }
+  #updated { color: #666; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+  <h1>SETRAM network — current status</h1>
+  <p>Real-time delay and disruption snapshot for Le Mans Métropole's bus and tram network.</p>
+  <div class="kpis" id="kpis">Loading...</div>
+  <div id="alerts">Loading alerts...</div>
+  <canvas id="delayChart" height="320"></canvas>
+  <p id="updated"></p>
+
+<script>
+fetch('data/current_state.json')
+  .then(r => r.json())
+  .then(data => {
+    const routes = data.routes || [];
+
+    document.getElementById('kpis').innerHTML = `
+      <div class="kpi"><div class="value">${data.network_avg_delay_s.toFixed(1)}s</div><div class="label">Network average delay</div></div>
+      <div class="kpi"><div class="value">${data.n_routes_reporting}</div><div class="label">Routes reporting</div></div>
+      <div class="kpi"><div class="value">${data.alerts.length}</div><div class="label">Active alerts</div></div>
+    `;
+
+    document.getElementById('updated').textContent = `Data last updated ${data.generated_at}`;
+
+    const alertsEl = document.getElementById('alerts');
+    if (!data.alerts || data.alerts.length === 0) {
+      alertsEl.classList.add('none');
+      alertsEl.innerHTML = '<strong>No active alerts.</strong>';
+    } else {
+      alertsEl.innerHTML = '<strong>Active alerts:</strong><ul>' +
+        data.alerts.map(a => `<li>[Route ${a.routes || '?'}] ${a.header}</li>`).join('') +
+        '</ul>';
+    }
+
+    if (routes.length === 0) {
+      document.getElementById('delayChart').outerHTML =
+        '<p>No route data yet -- trigger the collect_snapshot workflow from the Actions tab.</p>';
+      return;
+    }
+
+    function scoreToColor(t) {
+      const clamped = Math.max(0, Math.min(1, t));
+      const hue = 120 * clamped; // 0 = red (worst), 120 = green (best)
+      return `hsl(${hue.toFixed(0)}, 70%, 45%)`;
+    }
+    function normalizeForColor(values, invert) {
+      const lo = Math.min(...values);
+      const hi = Math.max(...values);
+      if (hi === lo) return values.map(() => 0.5);
+      const scaled = values.map(v => (v - lo) / (hi - lo));
+      return invert ? scaled.map(s => 1 - s) : scaled;
+    }
+    // lower delay = greener, higher delay = redder
+    const colorNorm = normalizeForColor(routes.map(r => r.avg_delay_s), true);
+    const barColors = colorNorm.map(t => scoreToColor(t));
+
+    new Chart(document.getElementById('delayChart'), {
+      type: 'bar',
+      data: {
+        labels: routes.map(r => r.route_name),
+        datasets: [{
+          label: 'Average delay (s)',
+          data: routes.map(r => r.avg_delay_s),
+          backgroundColor: barColors
+        }]
+      },
+      options: {
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: 'Average delay by route, this snapshot (green = on time/early, red = most delayed)' },
+          tooltip: {
+            callbacks: {
+              title: (items) => {
+                const r = routes[items[0].dataIndex];
+                return `Route ${r.route_name}`;
+              },
+              label: (item) => {
+                const r = routes[item.dataIndex];
+                return [`Avg delay: ${r.avg_delay_s}s`, `Trips observed: ${r.n_trips_observed}`, `Skipped stops: ${r.n_skipped}`];
+              }
+            }
+          }
+        },
+        scales: { y: { title: { display: true, text: 'Average delay (seconds)' } } }
+      }
+    });
+  })
+  .catch(err => {
+    document.getElementById('kpis').innerHTML =
+      '<p>Could not load network status (' + err + '). Check that ' +
+      '<code>docs/data/current_state.json</code> exists in the repo.</p>';
+  });
+</script>
+</body>
+</html>
