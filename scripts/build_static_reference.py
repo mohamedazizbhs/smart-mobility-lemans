@@ -90,6 +90,37 @@ def main():
     print(f"Wrote data/gtfs_static/routes.csv ({len(routes)} rows)")
     print("Top 5 busiest stops:")
     print(freq[["stop_name", "daily_trip_count", "nearest_commune"]].head(5).to_string(index=False))
+    
+    # Supply versus population analysis
+    supply = freq.groupby("nearest_commune", as_index=False)["daily_trip_count"].sum()
+
+    supply = supply.rename(columns={
+        "nearest_commune": "commune",
+        "daily_trip_count": "daily_supply"
+    })
+
+    comparison = communes_df[["commune", "population"]].merge(
+        supply, on="commune", how="left"
+    )
+
+    comparison["daily_supply"] = comparison["daily_supply"].fillna(0)
+
+    comparison["supply_per_1000"] = (
+        comparison["daily_supply"] /
+        comparison["population"] * 1000
+    ).round(2)
+
+    comparison = comparison.sort_values(
+        "supply_per_1000", ascending=False
+    )
+
+    comparison.to_csv(
+        "data/gtfs_static/supply_population.csv",
+        index=False
+    )
+
+    print(comparison.to_string(index=False))
+
 
 if __name__ == "__main__":
     main()
