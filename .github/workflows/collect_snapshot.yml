@@ -1,0 +1,27 @@
+name: Collect realtime snapshot
+
+"on":
+  workflow_dispatch: {}
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install requests pandas gtfs-realtime-bindings
+      - run: python scripts/collect_snapshot.py
+      - name: Commit updated snapshot data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/history/ docs/data/current_state.json
+          git commit -m "Update realtime snapshot [automated]" || echo "Nothing to commit"
+          git push
