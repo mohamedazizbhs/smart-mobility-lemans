@@ -730,7 +730,7 @@ Step 6 placeholder).
 
 ### Step 13 — Open the live dashboard
 
-Visit your Pages URL (`https://<username>.github.io/smart-mobility-lemans/`).
+Visit your Pages URL (`https://mohamedazizbhs.github.io/smart-mobility-lemans/`).
 
 ### Step 14 — Confirm the automation is actually running unattended
 
