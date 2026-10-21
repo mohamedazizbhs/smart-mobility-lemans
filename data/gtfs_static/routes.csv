@@ -1,0 +1,67 @@
+route_id,route_short_name,route_long_name,route_type
+T1,T1,Antarès-Stade Marie Marvingt - Université,0
+T2,T2,Espal-Arche de la Nature – Bellevue-Hauts de C.,0
+T3,T3,Allonnes-Bois Joli - Gares,3
+C4,C4,St-Joseph/St-Georges - Bellevue-Hauts de Coulaines,3
+5,5,Gazonfier - Oasis-Centre des Expositions,3
+6,6,République - St-Martin,3
+7,7,Éperon via Auchan,3
+8,8,Le Cadran / Myosotis - Zamenhof,3
+10A,10A,Oasis-Centre des Expo. par Pontlieue et Glonnières,3
+10B,10B,Oasis-Centre des Exp. par Glonnières et Pontlieue,3
+11,11,Mairie Le Mans - Closerie,3
+12,12,Domaine de Beauregard - St-Martin,3
+13,13,Gare routière - Mairie Arnage,3
+14,14,Parc Manceau - Gare routière,3
+15,15,Le Verger - Guetteloup,3
+16,16,Lafayette - Californie,3
+20,20,Mairie Aigné - Éperon,3
+21,21,St-Martin - Mairie Arnage,3
+22,22,Place des commerces via Zamenhof,3
+23,23,République - Beaulieu,3
+24,24,Mairie Ruaudin - Stade Mulsanne,3
+25,25,République - Gare Champagné / Place de l'Eglise,3
+26,26,St-Georges / St-Joseph - Les Hautes Métairies,3
+28,28,Four à Chanvre - Mairie Rouillon,3
+30,30,Gare Sud - Les Croisettes,3
+32,32,Église Fay / Stade Asnillé - Gare Sud,3
+33,33,La Denisière - Université,3
+34,34,Centre Commercial - Gare Sud,3
+35,35,Gare Sud - Sécurité Sociale,3
+100,100,Aigné/LaMilesse/St-Saturnin/LaChapelle-Col.Mûriers,3
+101,101,Aigné/La Milesse/La Chapelle - Collège Épine,3
+102,102,Aigné/La Milesse/St-Saturnin-Collège La Madeleine,3
+103,103,Aigné/La Milesse/St-Saturnin-Washington/Funay/Sud,3
+104,104,Mairie Le Mans - Lycée Les Horizons,3
+110,110,Mulsanne/Ruaudin - Lycées Sud/Funay/St-Charles,3
+111,111,Mulsanne/Ruaudin - Lycées Montesquieu /Bellevue,3
+112,112,Mulsanne - Lycée André Malraux,3
+113,113,Ruaudin - Collège Bérangère de Navarre,3
+114,114,Ruaudin/Mulsanne - Collège Bollée,3
+115,115,Allonnes- Lycée Claude Chappe,3
+120,120,Fatines/Champagné - Lycées Sud/Funay/Washington,3
+121,121,Fatines/Champagné/Yvré-Lycée Bellevue/Montesquieu,3
+122,122,Yvré-L'Évêque - Collège Pasteur,3
+123,123,Fatines - Collège Wilbur Wright,3
+124,124,Fatines - Collège Wilbur Wright,3
+125,125,Fatines - Collège Wilbur Wright,3
+130,130,Sargé-lès-Le-Mans - Collèges La Psallette/Tolstoï,3
+140,140,Allonnes/StGDuBois-LeMarin/Kennedy/Pasteur/Lyautey,3
+141,141,Rouillon - Col. Vieux Colombier/St-Joseph La Salle,3
+142,142,Rouillon - Lycée André Malraux,3
+150,150,St-Georges-du-Bois - Collège Kennedy/Le Marin,3
+151,151,St-Georges-du-Bois - Lycée St-Joseph La Salle,3
+152,152,Fay / St-Georges-du-Bois - Lycée André Malraux,3
+153,153,Chaufour/Fay/Pruillé - St-Joseph/Vieux Colombier,3
+154,154,Fay/Pruillé - St-Joseph La Salle/Vieux Colombier,3
+155,155,Trangé/Chaufour-Notre-Dame - Col. A.Paré / Mûriers,3
+160,160,Foresterie - Collège Épine,3
+161,161,Foresterie - École Louise Labé,3
+162,162,Mairie Le Mans - Lycée Ste-Catherine,3
+163,163,Gare routière - Lycée Ste-Catherine,3
+M,M,La Mancelle,3
+FLEX-21b,F+ Est,Flex+ Est,3
+FLEX-21c,F+ La Forêt,Flex+ La Forêt,3
+FLEX-22,F+ Monné,Flex+ Monné,3
+FLEX-21a,F+ Nord,Flex+ Nord,3
+FLEX-20,F+ Sud,Flex+ Sud,3

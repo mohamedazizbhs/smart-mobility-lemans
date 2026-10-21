@@ -1,0 +1,799 @@
+stop_id,daily_trip_count,stop_name,stop_lat,stop_lon,wheelchair_boarding,nearest_commune
+1079,250,Gares,47.996108,0.192407,1,Le Mans
+2547,230,Mairie Le Mans,48.006837,0.197433,1,Le Mans
+2546,214,Mairie Le Mans,48.006674,0.19707,1,Le Mans
+2348,214,Gare routière,47.996926,0.190323,1,Le Mans
+3095,198,St-Exupéry,48.000451,0.211705,2,Le Mans
+2755,198,Sécurité Sociale,47.996792,0.219838,2,Le Mans
+2299,198,Erpell,48.002754,0.204967,2,Le Mans
+2322,198,Flore,48.001667,0.209117,2,Le Mans
+2571,198,Mariette,47.998735,0.213381,2,Le Mans
+2572,196,Mariette,47.99901,0.213401,2,Le Mans
+3094,196,St-Exupéry,48.000496,0.211812,2,Le Mans
+2323,196,Flore,48.001785,0.208944,2,Le Mans
+2883,196,Comtes du Maine,48.004092,0.200496,1,Le Mans
+2298,196,Erpell,48.002684,0.205461,2,Le Mans
+2756,196,Sécurité Sociale,47.997153,0.218605,2,Le Mans
+2624,193,Oasis-Centre des Expositions,47.960605,0.200395,1,Arnage
+2783,188,St-Joseph,47.984409,0.141987,2,Rouillon
+3323,186,Éperon,48.005381,0.194055,1,Le Mans
+2687,185,Pontlieue-Geneslay,47.982396,0.210125,2,Le Mans
+2688,184,Pontlieue-Geneslay,47.982666,0.210409,2,Le Mans
+2795,176,St-Martin,47.985701,0.209411,1,Le Mans
+2790,173,St-Martin,47.985928,0.209441,1,Le Mans
+1096,160,Stade Georges Garnier,47.972953,0.158726,1,Allonnes
+1085,160,Lycée André Malraux,47.956335,0.165854,1,Allonnes
+1074,160,Centre Culturel Jean Carmet,47.967861,0.160169,1,Allonnes
+1081,160,Centre Hospitalier Spécialisé,47.959235,0.165574,1,Allonnes
+2357,155,Gazonfier,48.005421,0.227038,1,Le Mans
+1091,155,Novaxud,47.994338,0.185546,1,Le Mans
+1095,155,Pêcheurs,47.99005,0.182277,1,Le Mans
+1090,155,Novaxud,47.994467,0.185715,1,Le Mans
+1094,155,Pêcheurs,47.989921,0.182121,1,Le Mans
+1097,152,Stade Georges Garnier,47.973358,0.158723,1,Allonnes
+1084,152,Lycée André Malraux,47.956498,0.165928,1,Allonnes
+1080,152,Centre Hospitalier Spécialisé,47.960215,0.16552,1,Allonnes
+1073,152,Centre Culturel Jean Carmet,47.967469,0.160372,1,Allonnes
+2689,152,Pontlieue-Jean Mac,47.982725,0.212033,1,Le Mans
+2349,151,Gare Sud,47.994986,0.189882,2,Le Mans
+2690,150,Pontlieue-Jean Mac,47.982912,0.21191,1,Le Mans
+3313,145,Médiathèque,48.002798,0.193005,2,Le Mans
+3275,144,Médiathèque,48.002783,0.193231,1,Le Mans
+2261,142,Diesel,47.982625,0.225707,2,Le Mans
+2342,142,Funay,47.985037,0.225264,2,Le Mans
+2540,142,Lycée Sud,47.982392,0.228642,1,Le Mans
+2124,140,Bouttié,48.010927,0.189087,1,Le Mans
+2191,140,Chêne Vert,48.008149,0.189535,1,Le Mans
+2713,139,République,48.003495,0.197426,1,Le Mans
+2262,137,Diesel,47.983262,0.22571,2,Le Mans
+2343,137,Funay,47.985267,0.225346,2,Le Mans
+2539,137,Lycée Sud,47.982472,0.228195,1,Le Mans
+1076,131,Collège Kennedy,47.965283,0.161829,1,Allonnes
+1072,131,Allonnes-Bois Joli,47.950152,0.162854,1,Allonnes
+1089,131,Martin-Bréguet,47.976344,0.167871,1,Allonnes
+1092,131,Patte d'Oie,47.978429,0.173091,1,Le Mans
+1086,131,Mairie Allonnes,47.970072,0.159582,1,Allonnes
+1082,131,Les Hautes Métairies,47.95259,0.165258,1,Allonnes
+2882,126,Colonel Raynal,47.99988,0.185562,1,Le Mans
+1069,124,Angevinière,47.985185,0.178482,1,Le Mans
+1093,124,Patte d'Oie,47.978557,0.173247,1,Le Mans
+1070,124,Angevinière,47.985056,0.178327,1,Le Mans
+1078,124,Gares,47.995788,0.193448,1,Le Mans
+1087,122,Mairie Allonnes,47.970271,0.159614,1,Allonnes
+1075,122,Collège Kennedy,47.965444,0.161782,1,Allonnes
+1071,122,Allonnes-Bois Joli,47.950447,0.16323,1,Allonnes
+1083,122,Les Hautes Métairies,47.952719,0.165427,1,Allonnes
+1088,122,Martin-Bréguet,47.976393,0.168097,1,Allonnes
+2254,121,De Gaulle,48.004026,0.198909,1,Le Mans
+2231,119,Comtes du Maine,48.004642,0.199738,1,Le Mans
+2398,115,Mairie Arnage,47.926958,0.187426,1,Arnage
+2245,114,Cugnot,47.981529,0.218364,1,Le Mans
+2036,114,Arromanches,47.985736,0.224819,1,Le Mans
+2183,113,Chasse Royale,48.014577,0.186838,1,Le Mans
+2182,113,Chasse Royale,48.014815,0.186601,1,Le Mans
+2165,113,CFA,47.983258,0.233928,2,Le Mans
+2144,113,Californie,47.984657,0.24015,1,Le Mans
+2219,113,Cochereaux,48.012582,0.18803,1,Le Mans
+2037,112,Arromanches,47.985578,0.224407,1,Le Mans
+2145,112,Californie,47.984712,0.240313,1,Le Mans
+3320,112,Cugnot,47.981683,0.218136,1,Le Mans
+2166,112,CFA,47.9831,0.233414,2,Le Mans
+2311,111,Europe,48.022038,0.206759,1,Coulaines
+2274,111,Église Coulaines,48.024159,0.2048,1,Coulaines
+2236,111,Copenhague,48.01996,0.20629,2,Coulaines
+3104,111,Louis Blanc,48.009601,0.195769,1,Le Mans
+2651,111,Paul-Louis Jacques,48.018445,0.208338,2,Coulaines
+3101,111,Passerelle,48.013323,0.199315,1,Coulaines
+2461,111,La Paix,48.024141,0.202291,1,Coulaines
+2797,111,St-Michel,48.021418,0.201785,1,Coulaines
+2638,111,Palmiers,48.018826,0.201657,1,Coulaines
+2509,111,Léon Tolstoï,48.019427,0.209701,1,Coulaines
+2048,111,Banjan,48.016222,0.202283,1,Coulaines
+2050,110,Banjan,48.016127,0.202047,1,Coulaines
+2796,110,St-Michel,48.021377,0.201565,1,Coulaines
+2639,110,Palmiers,48.018753,0.201423,1,Coulaines
+2650,108,Paul-Louis Jacques,48.018389,0.208914,2,Coulaines
+2078,108,Bellevue-Hauts de Coulaines,48.020235,0.212,1,Coulaines
+2235,108,Copenhague,48.019636,0.206401,2,Coulaines
+2273,108,Église Coulaines,48.023909,0.205258,1,Coulaines
+2508,108,Léon Tolstoï,48.019038,0.209882,1,Coulaines
+2460,108,La Paix,48.024215,0.202296,1,Coulaines
+2310,108,Europe,48.021875,0.206841,1,Coulaines
+2778,107,St-Georges,47.983816,0.150278,1,Rouillon
+2328,107,Folleray,47.985963,0.163656,1,Rouillon
+2859,107,Vieux Colombier,47.989188,0.167175,1,Le Mans
+2858,106,Vieux Colombier,47.989847,0.167917,1,Le Mans
+2016,106,Alfred de Vigny,48.002029,0.227936,1,Le Mans
+2574,106,Marivaux,47.999482,0.227633,1,Le Mans
+2387,106,Guillaume Apollinaire,47.999987,0.23126,1,Le Mans
+2804,106,Sully Prudhomme,48.00157,0.231007,1,Le Mans
+2329,106,Folleray,47.986001,0.163963,1,Rouillon
+2176,106,Charbonnière,48.003082,0.230384,1,Le Mans
+2577,105,Maroc,47.972089,0.205105,2,Le Mans
+2724,105,Ronceray,47.973825,0.206063,2,Le Mans
+2478,105,Lazare Weiller,47.967232,0.202924,2,Le Mans
+2749,105,Sapins,47.97996,0.208961,2,Le Mans
+2432,105,Jules Védrines,47.964785,0.201816,2,Le Mans
+2210,105,Cité Joly,47.975502,0.206819,2,Le Mans
+2479,103,Lazare Weiller,47.967378,0.203268,2,Le Mans
+2750,103,Sapins,47.980146,0.209266,2,Le Mans
+2576,103,Maroc,47.971112,0.205008,2,Le Mans
+2725,103,Ronceray,47.973887,0.206346,2,Le Mans
+2184,103,Château d'Eau,47.969395,0.204226,2,Le Mans
+2887,103,Jules Védrines,47.965278,0.202276,2,Le Mans
+2209,103,Cité Joly,47.975852,0.207256,2,Le Mans
+2017,102,Alfred de Vigny,48.002203,0.227548,1,Le Mans
+2803,102,Sully Prudhomme,48.00164,0.230921,1,Le Mans
+2573,102,Marivaux,47.999366,0.227991,1,Le Mans
+2175,102,Charbonnière,48.003077,0.230588,1,Le Mans
+2388,102,Guillaume Apollinaire,47.999942,0.231662,1,Le Mans
+2108,102,Bollée,47.99781,0.223274,1,Le Mans
+2109,98,Bollée,47.996543,0.222932,1,Le Mans
+2853,96,Viaducs,47.993042,0.204544,1,Le Mans
+2699,94,Pyrénées,47.992827,0.225367,1,Le Mans
+2291,94,Éperon,48.005452,0.195516,1,Le Mans
+3057,86,Four à Chanvre,48.060491,0.14125,1,La-Milesse
+2470,85,Lafayette,48.006813,0.189912,1,Le Mans
+2188,84,Chaumard,47.996632,0.1793,1,Le Mans
+2786,84,St-Lazare,47.999785,0.182254,1,Le Mans
+2888,84,Le Clos,47.984899,0.161202,2,Rouillon
+2317,84,Fernand Tavano,47.992086,0.172704,1,Le Mans
+2332,84,Les Fontenelles,48.020698,0.225849,1,Coulaines
+2739,84,Rue du Loir,47.987744,0.166303,1,Le Mans
+2434,84,Kaboul,48.01935,0.222889,1,Coulaines
+2198,84,Cimetière St-Georges,47.995252,0.177521,1,Le Mans
+2632,84,Pagès,47.994266,0.176261,1,Le Mans
+2003,84,Acacias,47.998295,0.181042,1,Le Mans
+2879,84,Zamenhof,48.017747,0.217795,1,Coulaines
+2594,84,Montaigu,47.984154,0.156816,1,Rouillon
+3119,83,Louis Blanc,48.010436,0.196376,1,Le Mans
+2316,83,Fernand Tavano,47.991772,0.172392,1,Le Mans
+2079,83,Bellevue-Hauts de Coulaines,48.019994,0.211932,1,Coulaines
+2595,83,Montaigu,47.983989,0.156441,1,Rouillon
+3120,83,Passerelle,48.013793,0.199665,2,Coulaines
+2631,83,Pagès,47.994205,0.176322,1,Le Mans
+2197,83,Cimetière St-Georges,47.995461,0.177942,2,Le Mans
+2483,83,Le Clos,47.985207,0.16215,1,Rouillon
+2740,83,Rue du Loir,47.988093,0.166648,1,Le Mans
+2779,83,St-Georges,47.983683,0.151587,1,Rouillon
+3281,83,St-Lazare,48.000006,0.182642,1,Le Mans
+2190,83,Chaumard,47.996924,0.1799,1,Le Mans
+2635,83,Palais des Congrès,48.000804,0.192295,1,Le Mans
+3321,83,Palais des Congrès,48.001326,0.192041,2,Le Mans
+3288,83,Colonel Raynal,47.999489,0.186176,1,Le Mans
+3009,82,Les Verts,48.037109,0.177428,1,La-Chapelle-Saint-Aubin
+2285,82,Émile Delahaye,48.038361,0.172661,1,La-Chapelle-Saint-Aubin
+2169,81,Champ de Mars,47.982241,0.207143,1,Le Mans
+2499,80,Le Verger,48.031439,0.204909,1,Coulaines
+2170,80,Champ de Mars,47.982454,0.206931,1,Le Mans
+2448,78,La Fuie,47.997952,0.200625,1,Le Mans
+2857,78,Victor Hugo,47.999199,0.199944,2,Le Mans
+2856,78,Viaducs,47.992981,0.204297,1,Le Mans
+2864,78,Washington,47.995612,0.202365,1,Le Mans
+2694,78,Préfecture,48.001063,0.197841,1,Le Mans
+2172,77,Chanzy,47.998454,0.203003,1,Le Mans
+2405,77,Ifs,48.001192,0.202678,1,Le Mans
+2865,77,Washington,47.995628,0.203104,1,Le Mans
+2463,74,La Rochelle,48.020834,0.180202,1,La-Chapelle-Saint-Aubin
+2770,74,Ste-Catherine,48.022353,0.178053,1,La-Chapelle-Saint-Aubin
+2294,74,Épine,48.019698,0.181745,1,Coulaines
+2267,74,Dunkerque,48.018215,0.183546,1,Coulaines
+2193,74,Cheverny,48.023444,0.17608,1,La-Chapelle-Saint-Aubin
+2229,74,Colonel Quéru,48.01681,0.184448,1,Coulaines
+2228,73,Colonel Quéru,48.016763,0.184365,1,Coulaines
+2662,73,Petite Croix,48.025321,0.171045,1,La-Chapelle-Saint-Aubin
+2771,73,Ste-Catherine,48.022953,0.177471,1,La-Chapelle-Saint-Aubin
+2874,73,Zone Industrielle Nord,48.02408,0.176388,2,La-Chapelle-Saint-Aubin
+2441,73,Myosotis,48.03722,0.156727,1,La-Chapelle-Saint-Aubin
+2464,73,La Rochelle,48.02059,0.180413,1,Coulaines
+2266,73,Dunkerque,48.017653,0.183838,1,Coulaines
+2295,73,Épine,48.019404,0.182005,1,Coulaines
+2524,71,Les Palis,48.023249,0.182719,1,Coulaines
+2599,71,Montsaulnière,48.020814,0.183883,1,Coulaines
+2598,71,Montsaulnière,48.020997,0.183537,1,Coulaines
+3010,71,Léard,48.025798,0.181236,1,La-Chapelle-Saint-Aubin
+2789,71,St-Liboire,48.017033,0.18555,1,Coulaines
+2525,71,Les Palis,48.023037,0.182548,1,Coulaines
+2788,71,St-Liboire,48.017243,0.18554,1,Coulaines
+2440,71,La Calandre,48.010289,0.193944,1,Le Mans
+3011,71,Léard,48.026014,0.181413,1,Coulaines
+3229,71,Kergomard,48.012314,0.190254,1,Le Mans
+3324,70,Éperon,48.005728,0.194096,2,Le Mans
+2192,70,Chêne Vert,48.008113,0.189684,1,Le Mans
+2040,70,Aubrac,47.993423,0.223775,1,Le Mans
+2029,70,Arche de la Nature,47.988141,0.243488,1,Le Mans
+2381,70,Gué Bernisson,47.99201,0.237565,1,Le Mans
+2504,70,Léon Blum,47.995428,0.227667,1,Le Mans
+2302,70,Espal,47.994626,0.234166,1,Le Mans
+2753,70,Savorgnan de Brazza,48.01203,0.223688,1,Coulaines
+2032,70,Ardoise,48.009034,0.226706,1,Coulaines
+2123,70,Bouttié,48.011099,0.189194,1,Le Mans
+2657,70,Perdrix,48.010125,0.225536,1,Coulaines
+2825,70,Tristan Bernard,48.013405,0.222331,1,Coulaines
+2028,69,Arche de la Nature,47.988203,0.243564,1,Le Mans
+2303,69,Espal,47.994713,0.234219,1,Le Mans
+2380,69,Gué Bernisson,47.992375,0.237164,1,Le Mans
+2505,69,Léon Blum,47.995534,0.227705,1,Le Mans
+2802,69,Suisse,47.994273,0.226152,1,Le Mans
+2644,68,Parc Manceau,48.032477,0.181492,1,La-Chapelle-Saint-Aubin
+2824,67,Tristan Bernard,48.013158,0.22272,1,Coulaines
+2754,67,Savorgnan de Brazza,48.011932,0.223936,2,Coulaines
+2658,67,Perdrix,48.010535,0.225327,1,Coulaines
+2738,66,Rue de Ruaudin,47.972916,0.231237,1,Le Mans
+2377,66,Grenoble,47.976104,0.234003,1,Le Mans
+2233,66,Contrexeville,47.970453,0.226978,1,Le Mans
+2154,66,Carcassonne,47.974587,0.233128,1,Le Mans
+2623,64,Oasis-Centre des Expositions,47.960624,0.200421,2,Arnage
+2153,63,Carcassonne,47.974187,0.232959,1,Le Mans
+2736,63,Rue de Ruaudin,47.972378,0.230742,1,Le Mans
+2726,63,Mairie Rouillon,48.004708,0.136418,1,Rouillon
+2234,63,Contrexeville,47.970567,0.227263,1,Le Mans
+2018,59,Les Hautes Métairies,47.952325,0.165584,1,Allonnes
+2811,59,Théodore Monod,48.011906,0.18194,1,Le Mans
+2810,59,Théodore Monod,48.011417,0.181877,1,Le Mans
+2653,59,Pavé,48.008892,0.180941,1,Le Mans
+2654,59,Pavé,48.009013,0.180878,1,Le Mans
+2449,58,La Gautrie,47.945657,0.184323,1,Arnage
+2614,58,Nauguibert,47.935584,0.186726,1,Arnage
+2226,58,Collèges,47.93813,0.185657,1,Arnage
+2744,58,Rue du Port,47.931748,0.186832,1,Arnage
+2094,57,Beuruay,47.925251,0.183905,1,Arnage
+2743,57,Rue du Port,47.931307,0.186672,1,Arnage
+2205,57,Cinémas CGR,48.048386,0.172657,1,Saint-Saturnin
+2227,57,Collèges,47.938887,0.185435,1,Arnage
+2729,57,Route du Lude,47.922441,0.184589,2,Arnage
+2450,57,La Gautrie,47.945573,0.184308,1,Arnage
+2467,57,La Vallée,47.925012,0.186699,2,Arnage
+2046,57,Avenue Nationale,47.927441,0.18491,1,Arnage
+2242,57,Croix de Braye,47.922757,0.185677,2,Arnage
+2615,57,Nauguibert,47.936,0.18673,1,Arnage
+2263,55,Domaine de Beauregard,47.998169,0.171207,1,Le Mans
+2792,55,St-Martin,47.985952,0.208575,1,Le Mans
+2422,55,Jean Cocteau,48.028515,0.202924,1,Coulaines
+2218,55,Closerie,48.031292,0.210032,1,Coulaines
+2780,54,St-Georges,47.983399,0.15113,1,Rouillon
+2820,53,Rue de l'Europe,48.036156,0.159011,1,La-Chapelle-Saint-Aubin
+2423,53,Jean Cocteau,48.028151,0.202755,1,Coulaines
+2276,53,Église St-Aubin,48.034439,0.161428,1,La-Chapelle-Saint-Aubin
+2661,53,Petite Croix,48.025715,0.170448,1,La-Chapelle-Saint-Aubin
+2385,53,Guetteloup,47.965452,0.222957,1,Ruaudin
+2277,52,Église St-Aubin,48.034153,0.161602,1,La-Chapelle-Saint-Aubin
+2819,52,Rue de l'Europe,48.035926,0.159303,1,La-Chapelle-Saint-Aubin
+2492,51,Le Luard,48.009556,0.263665,1,Yvre-l-Eveque
+2485,51,Le Côteau,47.997484,0.2276,2,Le Mans
+3310,51,Avenue du Mans,48.001273,0.24612,2,Yvre-l-Eveque
+2403,51,Logis de l'Huisne,47.999819,0.240336,1,Le Mans
+2084,51,Béner,47.99892,0.235554,1,Le Mans
+2842,51,Vaugauthier,47.997709,0.229994,2,Le Mans
+2203,51,Cimetière Yvré,48.012331,0.267458,1,Yvre-l-Eveque
+2712,50,République,48.002668,0.198206,1,Le Mans
+2714,50,République,48.002989,0.197891,1,Le Mans
+2869,50,Beaulieu,48.018764,0.270836,1,Yvre-l-Eveque
+2843,49,Vaugauthier,47.997927,0.23044,1,Le Mans
+2204,49,Cimetière Yvré,48.01187,0.266276,1,Yvre-l-Eveque
+2404,49,Logis de l'Huisne,47.999908,0.240127,1,Le Mans
+2491,49,Le Luard,48.009475,0.263505,1,Yvre-l-Eveque
+2484,49,Le Côteau,47.99757,0.227063,2,Le Mans
+2389,49,Guy Bouriat,48.013575,0.270604,1,Yvre-l-Eveque
+3311,49,Avenue du Mans,48.001261,0.245496,2,Yvre-l-Eveque
+2085,49,Béner,47.999253,0.236724,1,Le Mans
+3012,48,Louis Delage,48.036463,0.17329,2,La-Chapelle-Saint-Aubin
+2041,48,Auchan,48.042472,0.175403,1,Saint-Saturnin
+3142,48,Éperon,48.005452,0.195516,2,Le Mans
+2338,48,Frères Renault,48.04199,0.171567,1,La-Chapelle-Saint-Aubin
+3061,47,Belle Chasse,48.017971,0.142426,1,La-Chapelle-Saint-Aubin
+3063,47,Leprince-Ringuet,48.017486,0.146185,1,La-Chapelle-Saint-Aubin
+3062,45,Leprince-Ringuet,48.017558,0.146116,1,La-Chapelle-Saint-Aubin
+3060,45,Belle Chasse,48.017714,0.141722,1,La-Chapelle-Saint-Aubin
+2717,43,Richedoué,48.003611,0.186314,1,Le Mans
+2341,43,Fromendière,47.983959,0.199516,1,Le Mans
+2066,43,Batignolles,47.987669,0.188108,1,Le Mans
+3156,43,La Fabrique,48.001029,0.187301,2,Le Mans
+2681,43,Polygone,47.984088,0.191257,2,Le Mans
+2019,43,Anatole France,48.001005,0.184401,1,Le Mans
+2103,43,Bobet,47.983143,0.204304,1,Le Mans
+2428,43,Jean-Michel Gaudré,47.988976,0.190401,1,Le Mans
+2105,43,Bobillot,47.992508,0.194613,1,Le Mans
+2534,43,Libération,48.004589,0.187335,1,Le Mans
+2424,43,Jean Macé,47.990174,0.193451,1,Le Mans
+2101,43,Bleuets,47.983852,0.194594,2,Le Mans
+2462,43,La Pointe,47.984123,0.186627,1,Le Mans
+2344,43,Fusains,47.985015,0.186375,1,Le Mans
+2610,42,Mutuel,48.008426,0.217293,2,Le Mans
+2611,42,Mutuel,48.008353,0.217414,1,Le Mans
+2009,42,Agadir,48.018734,0.230613,1,Coulaines
+2083,42,Belvédères,47.918756,0.257201,2,Mulsanne
+3100,42,Zamenhof,48.017781,0.217942,1,Coulaines
+2059,42,Barcelone,48.01916,0.226383,2,Coulaines
+2065,42,Batignolles,47.987594,0.188147,1,Le Mans
+2214,42,Clairefontaine,48.015189,0.225972,1,Coulaines
+2213,42,Clairefontaine,48.015266,0.225961,1,Coulaines
+2863,42,Villaret,48.015586,0.230406,2,Coulaines
+2862,42,Villaret,48.015436,0.230165,1,Coulaines
+2286,42,Émile Plet,47.917174,0.248349,2,Mulsanne
+2765,42,Stade Mulsanne,47.907055,0.238144,1,Mulsanne
+2248,42,Cygnes,48.007378,0.22409,2,Coulaines
+2264,42,Dorée,48.023817,0.232826,2,Coulaines
+2249,42,Cygnes,48.007308,0.224171,2,Coulaines
+2838,42,Valence,48.015459,0.227936,1,Coulaines
+2837,42,Valence,48.015397,0.228034,1,Coulaines
+2265,42,Dorée,48.023442,0.232317,1,Coulaines
+2333,42,Les Fontenelles,48.02058,0.225922,2,Coulaines
+2482,42,Le Cadran,48.020645,0.172002,2,La-Chapelle-Saint-Aubin
+2680,42,Polygone,47.984597,0.190147,2,Le Mans
+2701,42,Quinconces,48.00731,0.200581,1,Le Mans
+2880,42,Zamenhof,48.017789,0.217906,1,Coulaines
+2163,42,Cerisiers,48.033095,0.242602,1,Sarge-les-le-Mans
+2663,42,Pied Sec,47.984323,0.201693,1,Le Mans
+2535,42,Libération,48.004346,0.187293,1,Le Mans
+2536,42,Lilas,47.984963,0.19557,2,Le Mans
+2157,42,Cèdres,47.915784,0.258482,1,Mulsanne
+2147,42,Calvaire,48.027968,0.241775,1,Sarge-les-le-Mans
+2164,42,Cerisiers,48.033335,0.242498,1,Sarge-les-le-Mans
+2152,42,Capucines,48.035775,0.244927,1,Sarge-les-le-Mans
+2148,42,Calvaire,48.028303,0.242376,1,Sarge-les-le-Mans
+2060,42,Barcelone,48.019427,0.227525,1,Coulaines
+2061,42,Bardet,48.008541,0.214277,1,Le Mans
+2062,42,Bardet,48.008618,0.214369,1,Le Mans
+2020,42,Anatole France,48.001593,0.184424,1,Le Mans
+2008,42,Agadir,48.018137,0.230638,1,Coulaines
+3131,42,Cochereaux,48.012698,0.188042,1,Le Mans
+2363,42,Gladiateurs,48.007271,0.203574,2,Le Mans
+2352,42,Gares,47.995789,0.193681,1,Le Mans
+2362,42,Gladiateurs,48.007417,0.202668,1,Le Mans
+2309,42,Étoile,48.006029,0.20204,2,Le Mans
+2320,42,Flora Tristan,47.919755,0.251313,1,Mulsanne
+2760,42,Solitude,48.004459,0.219723,1,Le Mans
+2759,42,Solitude,48.003974,0.220512,1,Le Mans
+2417,42,Jardin des Plantes,48.007952,0.208141,1,Le Mans
+2416,42,Jardin des Plantes,48.008036,0.207159,1,Le Mans
+2429,42,Jean-Michel Gaudré,47.989264,0.191396,2,Le Mans
+2058,42,Barbusse,47.986004,0.196887,2,Le Mans
+2113,42,Bonnétable,48.025582,0.236868,1,Sarge-les-le-Mans
+2104,42,Bobet,47.983216,0.204315,1,Le Mans
+2112,42,Bonnétable,48.02635,0.238939,1,Sarge-les-le-Mans
+2439,42,La Bouquetière,48.039025,0.240019,2,Sarge-les-le-Mans
+2433,42,Kaboul,48.019755,0.224097,1,Coulaines
+2435,42,Kaboul,48.019,0.223762,2,Coulaines
+2472,42,Lambert,48.005771,0.221256,1,Le Mans
+2471,42,Lambert,48.005713,0.220961,1,Le Mans
+3036,42,Marcel Cerdan,48.0392,0.241543,1,Sarge-les-le-Mans
+2425,42,Jean Macé,47.990166,0.193612,1,Le Mans
+2626,42,Orée du Bois,47.913462,0.250333,1,Mulsanne
+2023,42,Antarès-Stade Marie Marvingt,47.955959,0.221841,1,Ruaudin
+2097,42,Bignon,48.030932,0.243535,1,Sarge-les-le-Mans
+2102,42,Bleuets,47.983885,0.195065,2,Le Mans
+2098,42,Bignon,48.031097,0.243408,1,Sarge-les-le-Mans
+3013,42,Maréchaux,48.039066,0.246649,1,Sarge-les-le-Mans
+2106,42,Bobillot,47.992616,0.194774,1,Le Mans
+2566,42,Mairie Ruaudin,47.945027,0.264671,1,Ruaudin
+2870,42,Yzeux,48.005795,0.217787,1,Le Mans
+2871,42,Yzeux,48.005265,0.217768,1,Le Mans
+2584,42,Mendès France,48.006817,0.199615,1,Le Mans
+2648,42,Paul Cézanne,47.914203,0.255907,1,Mulsanne
+2034,42,Ardoise,48.008762,0.226772,1,Coulaines
+3238,42,Mare,48.038089,0.235367,2,Sarge-les-le-Mans
+3270,42,Gironde,48.03464,0.233514,2,Sarge-les-le-Mans
+3280,42,Place des Commerces,48.033553,0.239846,2,Sarge-les-le-Mans
+2513,39,Les Croisettes,48.043352,0.220355,2,Coulaines
+3314,38,Sécurité Sociale,47.996177,0.220718,2,Le Mans
+2586,38,Millet,47.973814,0.223828,1,Le Mans
+2585,38,Millet,47.973433,0.223073,1,Le Mans
+2620,38,Noguès,47.963019,0.196613,1,Le Mans
+2621,38,Noguès,47.964122,0.19748,2,Le Mans
+2030,38,Archives départementales,47.981418,0.205299,1,Le Mans
+2031,38,Archives départementales,47.981243,0.205388,1,Le Mans
+2569,38,Marcel Paul,47.978153,0.22861,1,Le Mans
+2570,38,Marcel Paul,47.97805,0.228662,1,Le Mans
+2590,38,Monet,47.975086,0.224573,1,Le Mans
+2600,38,Morane,47.964298,0.205759,1,Le Mans
+2095,38,Bigarreaux,47.980066,0.221801,1,Le Mans
+2364,38,Glonnières-Centre Sud,47.972633,0.216658,1,Le Mans
+2376,38,Grenoble,47.97667,0.233868,1,Le Mans
+2366,38,Glonnières-Centre Sud,47.97215,0.216608,1,Le Mans
+2258,38,Deux Ormeaux,47.978927,0.22555,1,Le Mans
+2259,38,Deux Ormeaux,47.979208,0.224838,1,Le Mans
+2339,38,Fresnellerie,47.969789,0.21046,1,Le Mans
+2727,38,Rousseau,47.97606,0.201846,2,Le Mans
+2419,38,Jardin du Souvenir,47.965651,0.213228,1,Le Mans
+2418,38,Jardin du Souvenir,47.965582,0.212942,1,Le Mans
+2401,38,Huchepie,47.968098,0.197413,1,Le Mans
+2402,38,Huchepie,47.967882,0.197395,1,Le Mans
+2728,38,Rousseau,47.976579,0.202376,1,Le Mans
+2091,38,Berry,47.970416,0.198305,1,Le Mans
+2090,38,Berry,47.971076,0.198404,1,Le Mans
+2589,38,Monet,47.975254,0.224129,1,Le Mans
+2247,38,Cugnot,47.980814,0.218712,2,Le Mans
+2340,38,Fresnellerie,47.969349,0.210917,1,Le Mans
+2312,38,Falconet,47.97131,0.215689,2,Le Mans
+2240,38,Courard,47.978012,0.203335,2,Le Mans
+2246,38,Cugnot,47.980918,0.219056,2,Le Mans
+2241,38,Courbet,47.969599,0.223528,1,Le Mans
+2220,38,Collectivité,47.978046,0.201458,2,Le Mans
+3074,38,Raineries,47.963491,0.208414,1,Le Mans
+2642,38,Papin,47.973555,0.199161,2,Le Mans
+2601,38,Morane,47.964131,0.20561,1,Le Mans
+3144,38,Oasis-Centre des Expositions,47.960633,0.200434,2,Arnage
+3143,38,Oasis-Centre des Expositions,47.960614,0.200408,2,Arnage
+2643,38,Papin,47.974239,0.199642,1,Le Mans
+2075,38,Bel Air,47.969349,0.214217,1,Le Mans
+2201,38,Cimetière Sud,47.96503,0.209467,1,Le Mans
+2852,38,Vert Galant,47.966808,0.214763,2,Le Mans
+2851,38,Vert Galant,47.966574,0.214487,2,Le Mans
+2542,38,Madon,47.961843,0.203646,1,Arnage
+2530,38,Les Sources,47.972269,0.221934,1,Le Mans
+2541,38,Madon,47.961983,0.203699,1,Arnage
+2531,38,Les Sources,47.972404,0.221576,1,Le Mans
+2133,38,Bruyères,47.976963,0.232522,1,Le Mans
+2134,38,Bruyères,47.977366,0.231399,1,Le Mans
+2884,38,Courbet,47.969534,0.223419,1,Le Mans
+2705,38,Raineries,47.963589,0.208418,1,Le Mans
+2202,38,Cimetière Sud,47.965053,0.209343,2,Le Mans
+2707,38,Rembrandt,47.971537,0.211626,2,Le Mans
+2706,38,Rembrandt,47.971615,0.211531,1,Le Mans
+2253,38,David d'Angers,47.966002,0.210089,1,Le Mans
+2839,38,Van Gogh,47.971411,0.213837,2,Le Mans
+2252,38,David d'Angers,47.966071,0.210135,1,Le Mans
+2096,38,Bigarreaux,47.979997,0.221782,1,Le Mans
+2074,38,Bel Air,47.968718,0.214767,1,Le Mans
+2845,38,Vauguyon,47.975644,0.220795,1,Le Mans
+2844,38,Vauguyon,47.975568,0.220794,1,Le Mans
+2840,38,Van Gogh,47.971346,0.213699,2,Le Mans
+2212,34,Citroën,48.029937,0.171843,2,La-Chapelle-Saint-Aubin
+2607,34,Moulin l'Évêque,48.024247,0.187356,2,Coulaines
+2606,34,Moulin l'Évêque,48.024327,0.187291,2,Coulaines
+2641,34,Panhard,48.032431,0.174313,1,La-Chapelle-Saint-Aubin
+2477,34,Lausanne,48.02248,0.187476,2,Coulaines
+2476,34,Lausanne,48.023051,0.187492,2,Coulaines
+2537,34,Louis Delage,48.036471,0.173429,1,La-Chapelle-Saint-Aubin
+2099,34,Blanchisserie,48.015046,0.197325,1,Coulaines
+2719,34,Richepin,48.019047,0.187005,1,Coulaines
+2211,34,Citroën,48.030075,0.171931,2,La-Chapelle-Saint-Aubin
+2283,34,Émile Delahaye,48.038483,0.172762,1,La-Chapelle-Saint-Aubin
+2538,34,Louis Delage,48.035778,0.173547,1,La-Chapelle-Saint-Aubin
+2110,34,Bon Pasteur,48.013126,0.197785,1,Coulaines
+3265,34,Cheret,48.026737,0.186083,2,Coulaines
+2872,34,Zone Industrielle Nord,48.024353,0.177134,2,La-Chapelle-Saint-Aubin
+2873,34,Zone Industrielle Nord,48.024671,0.176854,1,La-Chapelle-Saint-Aubin
+2178,34,Charles Sauria,48.034535,0.179731,1,La-Chapelle-Saint-Aubin
+2177,34,Charles Sauria,48.034633,0.179595,1,La-Chapelle-Saint-Aubin
+3266,34,Cheret,48.026817,0.186305,2,Coulaines
+3271,34,Gallière,48.027039,0.182651,2,Coulaines
+2337,34,Foucault,48.026412,0.175218,2,La-Chapelle-Saint-Aubin
+2111,34,Bon Pasteur,48.012406,0.197242,1,Le Mans
+2100,34,Blanchisserie,48.015425,0.196974,1,Coulaines
+2089,34,Berne,48.021411,0.185728,1,Coulaines
+2718,34,Richepin,48.019003,0.187142,1,Coulaines
+2306,34,Étamines,48.017559,0.188594,2,Coulaines
+2347,34,Gallière,48.027018,0.182455,1,Coulaines
+2336,34,Foucault,48.026512,0.175309,2,La-Chapelle-Saint-Aubin
+3161,34,Cimetière de l'Ouest,48.017508,0.192327,2,Coulaines
+3162,34,Étamines,48.017466,0.188555,2,Coulaines
+2068,34,Cimetière de l'Ouest,48.017705,0.192521,1,Coulaines
+2047,34,Bâle,48.021297,0.187355,1,Coulaines
+3076,34,Ledru-Rollin,48.010192,0.194861,2,Le Mans
+2814,34,Thomas Edison,48.025097,0.179641,1,La-Chapelle-Saint-Aubin
+3075,34,Ledru-Rollin,48.010161,0.19492,1,Le Mans
+2640,34,Panhard,48.03286,0.174357,1,La-Chapelle-Saint-Aubin
+2815,34,Thomas Edison,48.024987,0.179747,1,La-Chapelle-Saint-Aubin
+2532,34,Les Verts,48.037534,0.177141,1,La-Chapelle-Saint-Aubin
+2628,32,Ormeau,48.00619,0.139081,1,Rouillon
+2179,32,Charmes,48.006847,0.139776,1,Rouillon
+2562,32,Marcel Carné,48.010055,0.165853,2,Rouillon
+2559,32,Marbot,48.009654,0.174219,2,Le Mans
+2582,32,Méliès,48.010841,0.160813,1,Rouillon
+2567,32,Marcel Pagnol,48.010699,0.167561,2,Rouillon
+2769,32,St-Christophe,48.040397,0.15206,1,La-Chapelle-Saint-Aubin
+2374,32,Grémillon,48.013554,0.163565,1,La-Chapelle-Saint-Aubin
+2498,32,Le Ribay,48.013595,0.16163,1,La-Chapelle-Saint-Aubin
+3059,32,Scotto,48.016372,0.141365,1,Rouillon
+2442,32,Myosotis,48.03727,0.156886,2,La-Chapelle-Saint-Aubin
+2326,32,Folie,48.009239,0.178276,2,Le Mans
+2696,32,Primevère,48.00879,0.136031,1,Rouillon
+2698,32,Puits Fendu,48.011399,0.158394,2,Rouillon
+2126,32,Bouvet,48.013248,0.182504,1,Le Mans
+2330,32,Fontaines,48.007536,0.132176,2,Rouillon
+2830,32,Université,48.016836,0.151999,1,La-Chapelle-Saint-Aubin
+2818,32,Tourellerie,48.012226,0.135342,1,Rouillon
+3098,32,Gymnase,48.05911,0.142932,1,La-Milesse
+2846,32,Vaujoubert,48.011857,0.153177,1,Rouillon
+2071,32,Beauvoir,48.013858,0.134746,1,Rouillon
+3079,32,Auric,48.013838,0.151136,2,Rouillon
+2125,31,Bouvet,48.01463,0.182673,2,Le Mans
+2142,31,Calberson,47.964643,0.185406,1,Allonnes
+2180,31,Charmes,48.007216,0.138839,2,Rouillon
+2334,31,Foucaudière,47.969733,0.180312,1,Allonnes
+2627,31,Ormeau,48.006215,0.1388,1,Rouillon
+2708,31,Renault,47.980478,0.178858,1,Le Mans
+2709,31,Renault,47.981515,0.180236,1,Le Mans
+2697,31,Puits Fendu,48.011501,0.158348,2,Rouillon
+2695,31,Primevère,48.008426,0.136016,1,Rouillon
+2617,31,Nelson Mandela,47.986774,0.181275,1,Le Mans
+2583,31,Méliès,48.01122,0.160962,1,Rouillon
+2561,31,Marcel Carné,48.009981,0.165905,2,Rouillon
+2560,31,Marbot,48.009687,0.174441,1,Le Mans
+2591,31,Monier,47.953712,0.184611,2,Allonnes
+2568,31,Marcel Pagnol,48.011413,0.167833,2,Rouillon
+2665,31,Pierre Piffault,47.978706,0.177693,2,Le Mans
+2664,31,Pierre Piffault,47.978736,0.177558,2,Le Mans
+3099,31,Gymnase,48.059098,0.14277,1,La-Milesse
+3078,31,Auric,48.013825,0.151212,2,Rouillon
+2072,31,Beauvoir,48.013905,0.134533,1,Rouillon
+2768,31,St-Christophe,48.04009,0.152219,1,La-Chapelle-Saint-Aubin
+2762,31,Spoutnik,47.983445,0.183467,2,Le Mans
+2761,31,Spoutnik,47.983202,0.183324,1,Le Mans
+2093,31,Bessemer,47.972472,0.176576,1,Allonnes
+2092,31,Bessemer,47.973238,0.175785,2,Allonnes
+2592,31,Monier,47.95363,0.184595,2,Allonnes
+2616,31,Nelson Mandela,47.987072,0.181706,1,Le Mans
+3058,31,Scotto,48.016067,0.141085,1,Rouillon
+2710,31,Renoncules,47.950502,0.188267,2,Arnage
+2711,31,Renoncules,47.950003,0.188538,1,Arnage
+2497,31,Le Ribay,48.013582,0.1615,1,La-Chapelle-Saint-Aubin
+2297,31,Équipement,47.96702,0.18328,1,Allonnes
+2847,31,Vaujoubert,48.0123,0.152323,1,Rouillon
+2296,31,Équipement,47.9674,0.18308,1,Allonnes
+2817,31,Tourellerie,48.012228,0.135212,1,Rouillon
+2327,31,Folie,48.009282,0.178379,2,Le Mans
+2308,31,Étang,47.946373,0.186428,1,Arnage
+2307,31,Étang,47.946291,0.186299,1,Arnage
+2826,31,Université,48.016896,0.151929,1,La-Chapelle-Saint-Aubin
+2758,31,SETRAM,47.97689,0.17621,2,Le Mans
+2757,31,SETRAM,47.976332,0.175929,1,Le Mans
+2785,31,St-Julien,47.961116,0.186525,1,Allonnes
+2784,31,St-Julien,47.960866,0.186347,1,Allonnes
+2335,31,Foucaudière,47.969605,0.180355,1,Allonnes
+2375,31,Grémillon,48.013589,0.163772,1,La-Chapelle-Saint-Aubin
+2086,30,Bérardière,47.976496,0.149014,1,Allonnes
+2168,30,Chabrier,47.97165,0.163616,1,Allonnes
+3155,30,Auguste Renoir,47.961072,0.155003,1,Allonnes
+3169,30,Argenton,47.964956,0.153571,2,Allonnes
+2660,30,Perrières,47.964412,0.156681,1,Allonnes
+2579,30,Massenet,47.96862,0.162979,1,Allonnes
+2645,30,Pasteur,47.967006,0.156873,2,Allonnes
+2173,30,Chaoué,47.969641,0.165636,1,Allonnes
+2494,30,Le Marin,47.963912,0.160184,1,Allonnes
+2752,30,Savoie,47.95457,0.165986,1,Allonnes
+2670,30,Piscine,47.96188,0.165014,1,Allonnes
+2345,30,Gabriel Paillereau,47.973135,0.147776,1,Allonnes
+2503,30,Léo Delibes,47.971345,0.159326,1,Allonnes
+3167,30,Cimetière Allonnes,47.960057,0.150246,1,Allonnes
+2174,29,Chaoué,47.969555,0.165575,1,Allonnes
+2167,29,Chabrier,47.971594,0.163639,1,Allonnes
+2980,29,Université,48.017086,0.150795,1,La-Chapelle-Saint-Aubin
+2977,29,La Denisière,48.026033,0.079267,1,Chaufour-Notre-Dame
+3140,29,Auguste Renoir,47.961796,0.155322,1,Allonnes
+2346,29,Gabriel Paillereau,47.973127,0.147626,1,Allonnes
+3170,29,Cimetière Allonnes,47.960039,0.15015,1,Allonnes
+2087,29,Bérardière,47.976051,0.149222,1,Allonnes
+2319,29,Flandres,47.954005,0.172234,1,Allonnes
+2849,29,Vendée,47.95541,0.169069,1,Allonnes
+3168,29,Argenton,47.966742,0.154324,2,Allonnes
+2354,29,Gascogne,47.95207,0.170913,1,Allonnes
+2493,29,Le Marin,47.963859,0.160408,1,Allonnes
+2255,29,Debussy,47.971148,0.160473,1,Allonnes
+2127,29,Bretagne,47.953048,0.168479,2,Allonnes
+2671,29,Piscine,47.961748,0.164939,1,Allonnes
+2519,29,Les Hautes Métairies,47.952155,0.165979,1,Allonnes
+2473,29,Languedoc,47.955628,0.171519,1,Allonnes
+2646,29,Pasteur,47.967351,0.156858,2,Allonnes
+2578,29,Massenet,47.968688,0.162914,1,Allonnes
+2659,29,Perrières,47.964245,0.157228,1,Allonnes
+3030,28,Pont Perrin,48.006809,0.192048,2,Le Mans
+2080,28,Bellevue-Hauts de Coulaines,48.020312,0.211041,1,Coulaines
+2692,28,Préau,47.987347,0.202917,2,Le Mans
+2618,28,Nice,48.022243,0.196434,1,Coulaines
+2876,28,Zamenhof,48.016935,0.219029,1,Coulaines
+2239,28,Corneille,48.019062,0.198442,1,Coulaines
+2866,28,Yokel,47.966106,0.220839,2,Le Mans
+2156,28,Carel Mutualité,47.99156,0.198119,1,Le Mans
+2187,28,Chateaubriand,48.001713,0.17117,1,Le Mans
+2500,28,Le Verger,48.031401,0.205055,1,Coulaines
+2747,28,Saffray,48.006661,0.180013,2,Le Mans
+2605,28,Moreau,47.998466,0.169765,1,Le Mans
+2117,28,Bourges,48.005008,0.179416,2,Le Mans
+2035,28,Ardriers,48.000922,0.169738,1,Le Mans
+2608,28,Mûriers,48.011917,0.185329,1,Le Mans
+2355,28,Gazonfier,48.006043,0.227818,2,Le Mans
+2437,28,La Baule,48.024113,0.201282,2,Coulaines
+2700,28,Pyrénées,47.992677,0.225203,1,Le Mans
+2674,28,Platanes,47.978413,0.23439,1,Le Mans
+2507,28,Léon Guet,47.967673,0.223032,1,Le Mans
+2300,28,ESCRA,47.980639,0.233831,1,Le Mans
+2055,28,Bara,47.985084,0.205128,1,Le Mans
+2777,28,St-Georges,47.983718,0.150408,2,Rouillon
+2668,28,Pipèche,48.004025,0.173886,2,Le Mans
+2587,28,Miroir,47.989718,0.198818,1,Le Mans
+2867,28,Yourcenar,47.993376,0.19618,1,Le Mans
+2393,28,Hendaye,48.024087,0.197076,2,Coulaines
+2069,28,Beaumarchais,48.003621,0.171162,2,Le Mans
+2609,27,Mûriers,48.011684,0.186354,1,Le Mans
+2007,27,Aérodrome,47.947781,0.194014,1,Arnage
+2004,27,Actisud,47.950121,0.195115,1,Arnage
+2392,27,Hendaye,48.024188,0.197375,2,Coulaines
+2155,27,Carel Mutualité,47.991285,0.198574,1,Le Mans
+3236,27,Gare Sud,47.994576,0.190429,1,Le Mans
+2604,27,Moreau,47.99866,0.169839,1,Le Mans
+2070,27,Beaumarchais,48.003821,0.1716,2,Le Mans
+2318,27,Feydeau,47.988332,0.20114,2,Le Mans
+2257,27,Delagenière,48.013086,0.200279,2,Coulaines
+2186,27,Chateaubriand,48.001521,0.171449,1,Le Mans
+2822,27,Trintignant,47.944558,0.190681,2,Arnage
+2800,27,St-Vincent,48.010215,0.199276,2,Le Mans
+2868,27,Yourcenar,47.993043,0.196996,1,Le Mans
+2691,27,Préau,47.987313,0.202851,2,Le Mans
+2683,27,Pommiers,47.945109,0.187847,1,Arnage
+2669,27,Pipèche,48.003964,0.173888,2,Le Mans
+2588,27,Miroir,47.99021,0.199471,1,Le Mans
+2619,27,Nice,48.022001,0.196567,1,Coulaines
+2622,27,Oasis-Centre des Expositions,47.960641,0.199912,2,Arnage
+2704,27,Racine,48.000019,0.170141,2,Le Mans
+2748,27,Saffray,48.007122,0.180304,2,Le Mans
+2118,27,Bourges,48.004876,0.179478,2,Le Mans
+2409,27,Jacobins,48.009242,0.200264,1,Le Mans
+2436,27,La Baule,48.024211,0.201086,2,Coulaines
+2054,27,Bara,47.98507,0.205054,2,Le Mans
+2006,26,Aérodrome,47.947888,0.194179,1,Arnage
+3039,26,Guy Bouriat,48.01345,0.273205,2,Yvre-l-Eveque
+2005,26,Actisud,47.95076,0.19551,1,Arnage
+2823,26,Trintignant,47.944025,0.191325,2,Arnage
+2682,26,Pommiers,47.945007,0.187872,1,Arnage
+2679,26,Polucan,48.011327,0.285557,1,Yvre-l-Eveque
+2510,26,Léopold Gouloumès,48.021514,0.331141,1,Champagne
+2361,26,Georges Brassens,48.018491,0.327162,1,Champagne
+2064,26,Basse Lande,48.01748,0.323106,1,Champagne
+3258,26,Michel-Ange,48.019161,0.331579,2,Champagne
+2044,26,Auvours,48.013344,0.317714,1,Champagne
+2033,25,Ardoise,48.008815,0.227248,1,Coulaines
+2613,25,Narcisses,48.014498,0.264801,1,Yvre-l-Eveque
+2612,25,Narcisses,48.014705,0.264974,1,Yvre-l-Eveque
+3041,25,Louise Michel,48.023858,0.332474,1,Champagne
+2356,25,Gazonfier,48.005787,0.227909,2,Le Mans
+2877,25,Zamenhof,48.017153,0.218973,1,Coulaines
+3325,25,Place de l'Église,48.045925,0.348381,2,Fatines
+2656,25,Perche,48.015224,0.270064,1,Yvre-l-Eveque
+3040,25,Louise Michel,48.023999,0.33212,1,Champagne
+2224,25,Collège Pasteur,48.016592,0.2695,1,Yvre-l-Eveque
+2225,25,Collège Pasteur,48.016495,0.269294,1,Yvre-l-Eveque
+2841,25,Le Vaudrou,48.027046,0.324408,1,Champagne
+2850,25,Verdun,48.026008,0.324874,1,Champagne
+2171,25,Gare Champagné,48.019248,0.33587,1,Champagne
+2673,25,Pivoines,48.013591,0.265672,1,Yvre-l-Eveque
+2544,25,Maine,48.014835,0.268078,1,Yvre-l-Eveque
+2543,25,Maine,48.014577,0.267192,1,Yvre-l-Eveque
+2672,25,Pivoines,48.013611,0.265554,1,Yvre-l-Eveque
+2675,25,Platanes,47.979008,0.234505,1,Le Mans
+2301,25,ESCRA,47.98101,0.233617,1,Le Mans
+2506,25,Léon Guet,47.967998,0.223668,1,Le Mans
+2358,25,George Sand,48.014855,0.270319,1,Yvre-l-Eveque
+2359,25,George Sand,48.014352,0.271523,1,Yvre-l-Eveque
+3259,24,Michel-Ange,48.019371,0.331413,2,Champagne
+2063,24,Basse Lande,48.017336,0.322334,1,Champagne
+2678,24,Polucan,48.011556,0.285523,1,Yvre-l-Eveque
+2511,24,Léopold Gouloumès,48.020984,0.330934,1,Champagne
+2360,24,Georges Brassens,48.018572,0.327261,1,Champagne
+2045,24,Auvours,48.013339,0.317534,1,Champagne
+2160,24,Centre Commercial,47.967229,0.092114,1,Saint-Georges-du-Bois
+2798,23,St-Saturnin,48.062038,0.158832,1,Saint-Saturnin
+2808,23,Terroirie,48.061982,0.139209,1,La-Milesse
+2315,23,Faraday,47.960413,0.17908,2,Allonnes
+2136,23,Buchetière,48.069931,0.118476,1,Aigne
+2886,23,Jacquard,47.965028,0.184436,2,Allonnes
+2014,23,Mairie Aigné,48.064477,0.11884,1,Aigne
+2558,23,Maquère,48.07777,0.115367,1,Aigne
+2137,23,Buchetière,48.069695,0.118392,1,Aigne
+2557,23,Maquère,48.077103,0.115771,1,Aigne
+3285,23,Val Morand,48.064688,0.134231,1,La-Milesse
+3284,23,Val Morand,48.064647,0.134114,1,La-Milesse
+2002,23,Abattoirs,47.961285,0.185143,2,Allonnes
+2026,23,Antonnière,48.061756,0.163266,1,Saint-Saturnin
+2027,23,Antonnière,48.061812,0.162378,1,Saint-Saturnin
+2799,23,St-Saturnin,48.061971,0.158842,1,Saint-Saturnin
+2832,23,Val de Vray,48.061341,0.154682,1,Saint-Saturnin
+2875,23,Zone Industrielle Sud,47.964076,0.179845,2,Allonnes
+2521,23,Les Horizons,48.057545,0.166426,1,Saint-Saturnin
+2279,23,Église St-Saturnin,48.058456,0.151767,1,Saint-Saturnin
+2379,23,Grues Rouges,48.054985,0.167454,1,Saint-Saturnin
+2490,23,Le Houx,48.06748,0.132732,2,La-Milesse
+3097,23,Gymnase,48.059662,0.143063,1,La-Milesse
+3096,23,Gymnase,48.059659,0.143309,1,La-Milesse
+2458,23,La Milesse,48.064013,0.136198,2,La-Milesse
+2457,23,La Mare,48.072164,0.130999,2,La-Milesse
+2456,23,La Mare,48.071898,0.131073,2,La-Milesse
+2073,23,Becquerel,47.963221,0.177141,2,Allonnes
+2378,23,Grues Rouges,48.055028,0.167651,1,Saint-Saturnin
+2474,23,L'Arche,48.059832,0.165156,1,Saint-Saturnin
+2489,23,Le Houx,48.06767,0.132806,1,La-Milesse
+2475,23,L'Arche,48.06033,0.165146,1,Saint-Saturnin
+2015,23,Mairie Aigné,48.064651,0.118948,1,Aigne
+2833,23,Val de Vray,48.061588,0.155059,1,Saint-Saturnin
+2278,23,Église St-Saturnin,48.058422,0.151845,1,Saint-Saturnin
+2809,23,Terroirie,48.06139,0.140239,1,La-Milesse
+2520,23,Les Horizons,48.057256,0.166467,1,Saint-Saturnin
+2459,23,La Milesse,48.063681,0.136482,1,La-Milesse
+2275,22,Église Fay,48.00946,0.068706,2,Fay
+3268,21,Denis Papin,47.939612,0.256783,2,Ruaudin
+2022,21,Anciens Combattants,47.907495,0.248351,1,Mulsanne
+2115,21,Bouchardière,47.942305,0.261708,1,Ruaudin
+3269,21,Denis Papin,47.939463,0.256625,2,Ruaudin
+2021,21,Anciens Combattants,47.907311,0.249107,1,Mulsanne
+2237,21,Cormier,47.940301,0.23288,1,Ruaudin
+2526,21,Les Pins,47.940026,0.265348,1,Ruaudin
+2523,21,Les Landes,47.95552,0.229814,1,Ruaudin
+2222,21,Collège Bollée,47.909937,0.25166,1,Mulsanne
+2565,21,Marcel Létang,47.944777,0.265163,1,Ruaudin
+2161,21,Centre Signoret,47.913338,0.248183,1,Mulsanne
+2162,21,Centre Signoret,47.913381,0.247509,1,Mulsanne
+2394,21,Hermitage,47.906174,0.241001,1,Mulsanne
+2114,21,Bouchardière,47.942186,0.262267,1,Ruaudin
+2806,21,Surcouf,48.024384,0.170917,1,La-Chapelle-Saint-Aubin
+2314,21,Maine Street,47.944054,0.240029,1,Ruaudin
+2313,21,Maine Street,47.943938,0.24008,1,Ruaudin
+2076,21,Belle Étoile,47.951219,0.233986,1,Ruaudin
+2816,21,Tilleuls,47.941274,0.263436,1,Ruaudin
+2395,21,Hermitage,47.906255,0.241231,1,Mulsanne
+3125,21,Émile Arrouet,47.906742,0.244801,2,Mulsanne
+3066,21,Nettleham,47.912705,0.249631,1,Mulsanne
+2077,21,Belle Étoile,47.951525,0.233758,1,Ruaudin
+2805,21,Surcouf,48.024292,0.170737,1,La-Chapelle-Saint-Aubin
+2495,21,Le Pressoir,47.944288,0.268414,1,Ruaudin
+3102,21,Petit Plessis,47.948461,0.260918,1,Ruaudin
+2221,21,Collège Bollée,47.909575,0.251763,1,Mulsanne
+2282,21,Émile Arrouet,47.906992,0.245434,1,Mulsanne
+2238,21,Cormier,47.940426,0.232718,1,Ruaudin
+2496,21,Le Pressoir,47.944041,0.268345,1,Ruaudin
+2412,21,Jacques Cartier,48.022405,0.170206,1,La-Chapelle-Saint-Aubin
+2413,21,Jacques Cartier,48.022408,0.170087,1,La-Chapelle-Saint-Aubin
+2522,21,Les Landes,47.955432,0.229883,1,Ruaudin
+2527,21,Les Pins,47.93983,0.266126,1,Ruaudin
+2746,20,Sables,48.023684,0.201794,2,Coulaines
+3049,19,Maupertuis,47.996108,0.216937,1,Le Mans
+2597,19,Monthéard,47.994243,0.213677,2,Le Mans
+2633,19,Paixhans,47.996929,0.2067,1,Le Mans
+2981,19,Viaducs,47.993732,0.204438,1,Le Mans
+2715,19,Résistants,47.995538,0.211068,2,Le Mans
+2821,19,Tri Postal,47.994513,0.215596,1,Le Mans
+2745,19,Sables,48.023778,0.201562,2,Coulaines
+2596,19,Monthéard,47.994346,0.213926,2,Le Mans
+2716,19,Résistants,47.995903,0.211324,2,Le Mans
+2634,19,Paixhans,47.996498,0.206358,1,Le Mans
+3277,18,Océane,48.048872,0.169241,2,Saint-Saturnin
+2143,18,Calberson,47.964966,0.18537,1,Allonnes
+3154,18,ISME,48.046342,0.170432,2,Saint-Saturnin
+2978,15,Les Gravillons,48.024826,0.079009,1,Chaufour-Notre-Dame
+2553,15,Mairie Trangé,48.027107,0.113264,1,Trange
+2555,15,Maisons Rouges,48.022342,0.09856,1,Trange
+2132,15,Bruyère Trangé,48.024693,0.105921,1,Trange
+2452,15,La Germinière,48.011689,0.124573,2,Rouillon
+2979,14,Les Gravillons,48.024842,0.079588,1,Chaufour-Notre-Dame
+2131,14,Bruyère Trangé,48.024584,0.105463,1,Trange
+2552,14,Mairie Trangé,48.027182,0.113237,1,Trange
+2554,14,Maisons Rouges,48.022466,0.098226,1,Trange
+3152,13,Les Landes de Bécanne,48.04439,0.330945,2,Fatines
+2443,13,La Chesnaie,48.023921,0.336276,1,Champagne
+3283,13,Stade Mauget,48.030603,0.335339,2,Champagne
+3282,12,Stade Mauget,48.030497,0.336181,2,Champagne
+2200,12,Cimetière,47.970769,0.097083,1,Saint-Georges-du-Bois
+2550,12,Mairie St-Georges-du-Bois,47.972672,0.099782,1,Saint-Georges-du-Bois
+2444,12,La Chesnaie,48.024012,0.336385,1,Champagne
+2730,12,Route du Mans,47.974336,0.103991,1,Saint-Georges-du-Bois
+2731,12,Route du Mans,47.974262,0.104084,1,Saint-Georges-du-Bois
+2199,12,Cimetière,47.970718,0.097192,1,Saint-Georges-du-Bois
+2551,12,Mairie St-Georges-du-Bois,47.972483,0.099247,1,Saint-Georges-du-Bois
+2453,11,La Grande Salle,47.995247,0.10858,1,Pruille-le-Chetif
+2548,11,Mairie Pruillé-le-Chétif,47.993397,0.107708,2,Pruille-le-Chetif
+2549,11,Mairie Pruillé-le-Chétif,47.993376,0.10813,2,Pruille-le-Chetif
+2454,11,La Grande Salle,47.995441,0.10871,2,Pruille-le-Chetif
+2465,11,La Touche,47.987483,0.133763,2,Rouillon
+2466,11,La Touche,47.987469,0.133992,2,Rouillon
+2763,11,Stade Asnillé,47.9961,0.105124,2,Pruille-le-Chetif
+2764,11,Stade Asnillé,47.996149,0.105063,2,Pruille-le-Chetif
+2782,11,St-Joseph,47.984795,0.141539,1,Rouillon
+3043,11,Aigreville,48.005778,0.075413,1,Fay
+3044,11,Aigreville,48.006063,0.075127,1,Fay
+2207,11,Cité,47.992781,0.10941,1,Pruille-le-Chetif
+2208,11,Cité,47.99204,0.109524,1,Pruille-le-Chetif
+2116,9,Bourdonnière,48.046298,0.173216,1,Saint-Saturnin
+2119,9,Bourdonnière,48.046569,0.173617,1,Saint-Saturnin
+2206,9,Cinémas CGR,48.048209,0.172783,1,Saint-Saturnin
+2831,6,Val de Sarthe,47.919778,0.180853,1,Arnage
