@@ -1,18 +1,7 @@
 {
-  "generated_at": "2026-10-24T23:24:45Z",
-  "network_avg_delay_s": 18.8,
-  "n_routes_reporting": 1,
-  "routes": [
-    {
-      "route_id": "T1",
-      "n_trips_observed": 2,
-      "n_stop_updates": 48,
-      "n_skipped": 24,
-      "avg_delay_s": 18.8,
-      "max_delay_s": 83,
-      "snapshot_ts": 1792884285,
-      "route_name": "T1"
-    }
-  ],
+  "generated_at": "2026-10-25T00:30:49Z",
+  "network_avg_delay_s": 0.0,
+  "n_routes_reporting": 0,
+  "routes": [],
   "alerts": []
 }
