@@ -1,242 +1,666 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Smart Mobility Le Mans — SETRAM network status</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
-<style>
-  body { font-family: system-ui, sans-serif; max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
-  .kpis { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0; }
-  .kpi { flex: 1; min-width: 180px; padding: 0.8rem 1rem; border: 1px solid #ccc; border-radius: 8px; }
-  .kpi .value { font-size: 1.6rem; font-weight: bold; color: #0d7c9e; }
-  .kpi .label { font-size: 0.8rem; color: #666; }
-  #alerts { padding: 0.8rem 1rem; border: 2px solid #c46e0a; border-radius: 8px; background: #faf3e8; }
-  #alerts.none { border-color: #2c9c4a; background: #f0f8f2; }
-  canvas { margin-top: 2rem; }
-  #updated { color: #666; font-size: 0.85rem; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Smart Mobility Le Mans — SETRAM Dashboard</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      color: #222;
+      background: #ffffff;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .kpis {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+    }
+
+    .kpi {
+      flex: 1;
+      min-width: 190px;
+      padding: 1.2rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: #fafafa;
+    }
+
+    .kpi .value {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #087c9e;
+    }
+
+    .kpi .label {
+      color: #666;
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
+    }
+
+    #alerts {
+      padding: 1rem;
+      border: 2px solid #c46e0a;
+      border-radius: 8px;
+      background: #fff7eb;
+      margin: 1rem 0;
+    }
+
+    #alerts.none {
+      border-color: #2c9c4a;
+      background: #f0f8f2;
+    }
+
+    .chart-container {
+      position: relative;
+      height: 450px;
+      margin-top: 2rem;
+    }
+
+    .supply-chart-container {
+      position: relative;
+      height: 750px;
+      margin-top: 1.5rem;
+    }
+
+    .section {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: #666;
+      background: #f5f7fa;
+      border-left: 4px solid #087c9e;
+      padding: 0.8rem 1rem;
+      margin: 1rem 0;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin-top: 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    th {
+      padding: 12px;
+      text-align: left;
+      background: #087c9e;
+      color: white;
+    }
+
+    td {
+      padding: 11px 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f7f9fb;
+    }
+
+    tbody tr:hover {
+      background: #edf6fa;
+    }
+
+    #updated,
+    #supply-status {
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+
+    .error {
+      color: #b91c1c;
+      background: #fef2f2;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin: 3rem 0 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #777;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 0 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .kpi {
+        min-width: 100%;
+      }
+
+      .chart-container {
+        height: 350px;
+      }
+
+      .supply-chart-container {
+        height: 650px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>SETRAM network — current status</h1>
-  <p>Real-time delay and disruption snapshot for Le Mans Métropole's bus and tram network.</p>
-  <div class="kpis" id="kpis">Loading...</div>
-  <div id="alerts">Loading alerts...</div>
-  <canvas id="delayChart" height="320"></canvas>
-  <p id="updated"></p>
 
-<section id="supply-section" style="margin-top: 3rem;">
-  <h2>Transport Supply vs Population</h2>
+  <header>
+    <h1>Smart Mobility Le Mans</h1>
 
-  <p>
-    Comparison of scheduled public transport stop-visits
-    per 1,000 residents across Le Mans Metropole's 20 communes.
-  </p>
+    <p class="subtitle">
+      SETRAM Public Transport — Real-Time Monitoring
+      and Supply Analysis
+    </p>
+  </header>
 
-  <p style="color: #666; font-size: 0.9rem;">
-    Population is used as a proxy for demand.
-    This indicator does not measure actual ridership.
-  </p>
+  <!-- ===================================== -->
+  <!-- SECTION 1: REAL-TIME NETWORK STATUS  -->
+  <!-- ===================================== -->
 
-  <div id="supply-status">Loading commune data...</div>
+  <section>
 
-  <div style="overflow-x: auto;">
-    <canvas id="supplyChart" height="450"></canvas>
-  </div>
+    <h2>Network Current Status</h2>
 
-  <h3>Commune Ranking</h3>
+    <p>
+      Real-time delay and disruption snapshot for
+      Le Mans Metropole's bus and tram network.
+    </p>
 
-  <div style="overflow-x: auto;">
-    <table id="supplyTable" style="width: 100%;
-      border-collapse: collapse; text-align: left;">
-      <thead>
-        <tr>
-          <th>Rank</th>
-          <th>Commune</th>
-          <th>Population</th>
-          <th>Daily stop-visits</th>
-          <th>Per 1,000 residents</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
-</section>
+    <div class="kpis" id="kpis">
+      Loading network indicators...
+    </div>
 
-<script>
-fetch('data/current_state.json')
-  .then(r => r.json())
-  .then(data => {
-    const routes = data.routes || [];
+    <div id="alerts">
+      Loading alerts...
+    </div>
 
-    document.getElementById('kpis').innerHTML = `
-      <div class="kpi"><div class="value">${data.network_avg_delay_s.toFixed(1)}s</div><div class="label">Network average delay</div></div>
-      <div class="kpi"><div class="value">${data.n_routes_reporting}</div><div class="label">Routes reporting</div></div>
-      <div class="kpi"><div class="value">${data.alerts.length}</div><div class="label">Active alerts</div></div>
-    `;
+    <div class="chart-container">
+      <canvas id="delayChart"></canvas>
+    </div>
 
-    document.getElementById('updated').textContent = `Data last updated ${data.generated_at}`;
+    <p id="updated"></p>
 
-    const alertsEl = document.getElementById('alerts');
-    if (!data.alerts || data.alerts.length === 0) {
-      alertsEl.classList.add('none');
-      alertsEl.innerHTML = '<strong>No active alerts.</strong>';
-    } else {
-      alertsEl.innerHTML = '<strong>Active alerts:</strong><ul>' +
-        data.alerts.map(a => `<li>[Route ${a.routes || '?'}] ${a.header}</li>`).join('') +
-        '</ul>';
-    }
+  </section>
 
-    if (routes.length === 0) {
-      document.getElementById('delayChart').outerHTML =
-        '<p>No route data yet -- trigger the collect_snapshot workflow from the Actions tab.</p>';
-      return;
-    }
+  <!-- ===================================== -->
+  <!-- SECTION 2: SUPPLY VS POPULATION      -->
+  <!-- ===================================== -->
 
-    function scoreToColor(t) {
-      const clamped = Math.max(0, Math.min(1, t));
-      const hue = 120 * clamped; // 0 = red (worst), 120 = green (best)
-      return `hsl(${hue.toFixed(0)}, 70%, 45%)`;
-    }
-    function normalizeForColor(values, invert) {
-      const lo = Math.min(...values);
-      const hi = Math.max(...values);
-      if (hi === lo) return values.map(() => 0.5);
-      const scaled = values.map(v => (v - lo) / (hi - lo));
-      return invert ? scaled.map(s => 1 - s) : scaled;
-    }
-    // lower delay = greener, higher delay = redder
-    const colorNorm = normalizeForColor(routes.map(r => r.avg_delay_s), true);
-    const barColors = colorNorm.map(t => scoreToColor(t));
+  <section class="section" id="supply-section">
 
-    new Chart(document.getElementById('delayChart'), {
-      type: 'bar',
-      data: {
-        labels: routes.map(r => r.route_name),
-        datasets: [{
-          label: 'Average delay (s)',
-          data: routes.map(r => r.avg_delay_s),
-          backgroundColor: barColors
-        }]
-      },
-      options: {
-        plugins: {
-          legend: { display: false },
-          title: { display: true, text: 'Average delay by route, this snapshot (green = on time/early, red = most delayed)' },
-          tooltip: {
-            callbacks: {
-              title: (items) => {
-                const r = routes[items[0].dataIndex];
-                return `Route ${r.route_name}`;
+    <h2>Transport Supply vs Population</h2>
+
+    <p>
+      Comparison of scheduled public transport
+      stop-visits per 1,000 residents across
+      Le Mans Metropole's 20 communes.
+    </p>
+
+    <div class="note">
+      <strong>Methodology:</strong>
+      Population is used as a proxy for transport demand.
+      This indicator measures scheduled stop-visits,
+      not actual ridership or passenger accessibility.
+      Stops are assigned to their nearest commune centre.
+    </div>
+
+    <p id="supply-status">
+      Loading commune data...
+    </p>
+
+    <div class="supply-chart-container">
+      <canvas id="supplyChart"></canvas>
+    </div>
+
+    <h3>Commune Ranking</h3>
+
+    <div class="table-container">
+      <table id="supplyTable">
+
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Commune</th>
+            <th>Population</th>
+            <th>Daily stop-visits</th>
+            <th>Per 1,000 residents</th>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+
+      </table>
+    </div>
+
+  </section>
+
+  <footer>
+    Smart Mobility Le Mans — Business Intelligence TD2
+    <p>
+      Data sources: SETRAM GTFS / GTFS-RT
+      and commune population reference data.
+    </p>
+  </footer>
+
+  <!-- ===================================== -->
+  <!-- SCRIPT 1: NETWORK STATUS             -->
+  <!-- ===================================== -->
+
+  <script>
+
+    fetch('data/current_state.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(
+            'Unable to load current_state.json'
+          );
+        }
+
+        return response.json();
+      })
+
+      .then(data => {
+
+        const routes = data.routes || [];
+        const alerts = data.alerts || [];
+
+        const networkDelay =
+          Number(data.network_avg_delay_s || 0);
+
+        const nRoutes =
+          Number(data.n_routes_reporting || 0);
+
+        // Display KPI cards
+        document.getElementById('kpis').innerHTML = `
+          <div class="kpi">
+            <div class="value">
+              ${networkDelay.toFixed(1)}s
+            </div>
+            <div class="label">
+              Network Average Delay
+            </div>
+          </div>
+
+          <div class="kpi">
+            <div class="value">
+              ${nRoutes}
+            </div>
+            <div class="label">
+              Routes Reporting
+            </div>
+          </div>
+
+          <div class="kpi">
+            <div class="value">
+              ${alerts.length}
+            </div>
+            <div class="label">
+              Active Alerts
+            </div>
+          </div>
+        `;
+
+        // Display timestamp
+        document.getElementById('updated').textContent =
+          `Data last updated: ${data.generated_at}`;
+
+        // Display alerts
+        const alertsElement =
+          document.getElementById('alerts');
+
+        if (alerts.length === 0) {
+
+          alertsElement.classList.add('none');
+
+          alertsElement.innerHTML =
+            '<strong>No active alerts.</strong>';
+
+        } else {
+
+          alertsElement.classList.remove('none');
+
+          alertsElement.innerHTML =
+            '<strong>Active alerts:</strong>';
+
+          const list = document.createElement('ul');
+
+          alerts.forEach(alert => {
+            const item = document.createElement('li');
+            item.textContent =
+              `Route ${alert.routes || '?'}: ${alert.header || ''}`;
+            list.appendChild(item);
+          });
+
+          alertsElement.appendChild(list);
+        }
+
+        // Handle empty route data
+        if (routes.length === 0) {
+
+          document.querySelector(
+            '.chart-container'
+          ).innerHTML =
+            '<p>No route data available yet.</p>';
+
+          return;
+        }
+
+        // Color from green to red
+        function scoreToColor(t) {
+          const value = Math.max(0, Math.min(1, t));
+          const hue = 120 * value;
+
+          return `hsl(${hue}, 70%, 45%)`;
+        }
+
+        function normalizeForColor(values) {
+
+          const lo = Math.min(...values);
+          const hi = Math.max(...values);
+
+          if (hi === lo) {
+            return values.map(() => 0.5);
+          }
+
+          return values.map(
+            value => 1 - (value - lo) / (hi - lo)
+          );
+        }
+
+        const delays = routes.map(
+          route => Number(route.avg_delay_s || 0)
+        );
+
+        const normalized =
+          normalizeForColor(delays);
+
+        const colors = normalized.map(
+          value => scoreToColor(value)
+        );
+
+        // Delay chart
+        new Chart(
+          document.getElementById('delayChart'),
+          {
+            type: 'bar',
+
+            data: {
+              labels: routes.map(
+                route => route.route_name || route.route_id
+              ),
+
+              datasets: [{
+                label: 'Average delay (seconds)',
+                data: delays,
+                backgroundColor: colors,
+                borderRadius: 4
+              }]
+            },
+
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+
+              plugins: {
+                legend: {
+                  display: false
+                },
+
+                title: {
+                  display: true,
+                  text: 'Average Delay by Route'
+                },
+
+                tooltip: {
+                  callbacks: {
+                    label: context => {
+                      const route =
+                        routes[context.dataIndex];
+
+                      return [
+                        `Average delay: ${route.avg_delay_s}s`,
+                        `Trips observed: ${route.n_trips_observed}`,
+                        `Skipped stops: ${route.n_skipped}`
+                      ];
+                    }
+                  }
+                }
               },
-              label: (item) => {
-                const r = routes[item.dataIndex];
-                return [`Avg delay: ${r.avg_delay_s}s`, `Trips observed: ${r.n_trips_observed}`, `Skipped stops: ${r.n_skipped}`];
+
+              scales: {
+                y: {
+                  title: {
+                    display: true,
+                    text: 'Average delay (seconds)'
+                  }
+                }
               }
             }
           }
-        },
-        scales: { y: { title: { display: true, text: 'Average delay (seconds)' } } }
-      }
-    });
-  })
-  .catch(err => {
-    document.getElementById('kpis').innerHTML =
-      '<p>Could not load network status (' + err + '). Check that ' +
-      '<code>docs/data/current_state.json</code> exists in the repo.</p>';
-  });
-  
-<script>
-fetch('data/supply_population.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Unable to load commune data');
-    }
-    return response.json();
-  })
-  .then(data => {
-    const communes = [...data].sort(
-      (a, b) => b.supply_per_1000 - a.supply_per_1000
-    );
+        );
 
-    document.getElementById('supply-status').textContent =
-      `${communes.length} communes analyzed`;
+      })
 
-    // Horizontal bar chart
-    new Chart(document.getElementById('supplyChart'), {
-      type: 'bar',
-      data: {
-        labels: communes.map(c => c.commune),
-        datasets: [{
-          label: 'Scheduled stop-visits per 1,000 residents',
-          data: communes.map(c => c.supply_per_1000),
-          backgroundColor: communes.map((c, i) =>
-            i < 3 ? '#16866e' :
-            i >= communes.length - 3 ? '#e68a52' :
-            '#49a7d8'
-          ),
-          borderRadius: 4
-        }]
-      },
-      options: {
-        indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          title: {
-            display: true,
-            text: 'Transport Supply per 1,000 Residents'
-          }
-        },
-        scales: {
-          x: {
-            beginAtZero: true,
-            title: {
-              display: true,
-              text: 'Scheduled stop-visits / 1,000 residents'
-            }
-          }
-        }
-      }
-    });
+      .catch(error => {
 
-    // Commune ranking table
-    const tbody = document.querySelector('#supplyTable tbody');
+        document.getElementById('kpis').innerHTML =
+          `<div class="error">
+            Unable to load network data:
+            ${error.message}
+          </div>`;
 
-    communes.forEach((c, index) => {
-      const tr = document.createElement('tr');
+        console.error(error);
 
-      const values = [
-        index + 1,
-        c.commune,
-        c.population,
-        c.daily_supply,
-        c.supply_per_1000.toFixed(2)
-      ];
-
-      values.forEach(value => {
-        const td = document.createElement('td');
-        td.textContent = value;
-        td.style.padding = '10px';
-        td.style.borderBottom = '1px solid #ddd';
-        tr.appendChild(td);
       });
 
-      tbody.appendChild(tr);
-    });
+  </script>
 
-    document.querySelectorAll('#supplyTable th').forEach(th => {
-      th.style.padding = '10px';
-      th.style.borderBottom = '2px solid #16866e';
-    });
-  })
-  .catch(error => {
-    document.getElementById('supply-status').textContent =
-      'Error loading commune data: ' + error.message;
-    console.error(error);
-  });
-</script>
+  <!-- ===================================== -->
+  <!-- SCRIPT 2: SUPPLY VS POPULATION       -->
+  <!-- ===================================== -->
 
-</script>
+  <script>
+
+    fetch('data/supply_population.json')
+
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(
+            'Unable to load supply_population.json'
+          );
+        }
+
+        return response.json();
+      })
+
+      .then(data => {
+
+        const communes = [...data].sort(
+          (a, b) =>
+            b.supply_per_1000 - a.supply_per_1000
+        );
+
+        document.getElementById(
+          'supply-status'
+        ).textContent =
+          `${communes.length} communes analyzed`;
+
+        // Chart colors
+        const colors = communes.map((commune, i) => {
+
+          if (i < 3) {
+            return '#16866e';
+          }
+
+          if (i >= communes.length - 3) {
+            return '#e68a52';
+          }
+
+          return '#49a7d8';
+        });
+
+        // Horizontal bar chart
+        new Chart(
+          document.getElementById('supplyChart'),
+          {
+            type: 'bar',
+
+            data: {
+              labels: communes.map(
+                c => c.commune
+              ),
+
+              datasets: [{
+                label: 'Stop-visits per 1,000 residents',
+
+                data: communes.map(
+                  c => c.supply_per_1000
+                ),
+
+                backgroundColor: colors,
+
+                borderRadius: 4
+              }]
+            },
+
+            options: {
+              indexAxis: 'y',
+              responsive: true,
+              maintainAspectRatio: false,
+
+              plugins: {
+                legend: {
+                  display: false
+                },
+
+                title: {
+                  display: true,
+                  text: 'Transport Supply per 1,000 Residents'
+                },
+
+                tooltip: {
+                  callbacks: {
+                    label: context => {
+                      const c =
+                        communes[context.dataIndex];
+
+                      return [
+                        `Supply: ${c.supply_per_1000}`,
+                        `Population: ${c.population}`,
+                        `Daily visits: ${c.daily_supply}`
+                      ];
+                    }
+                  }
+                }
+              },
+
+              scales: {
+                x: {
+                  beginAtZero: true,
+
+                  title: {
+                    display: true,
+                    text: 'Scheduled stop-visits per 1,000 residents'
+                  }
+                }
+              }
+            }
+          }
+        );
+
+        // Fill ranking table
+        const tbody = document.querySelector(
+          '#supplyTable tbody'
+        );
+
+        tbody.innerHTML = '';
+
+        communes.forEach((commune, index) => {
+
+          const row = document.createElement('tr');
+
+          const values = [
+            index + 1,
+            commune.commune,
+            commune.population,
+            commune.daily_supply,
+            Number(commune.supply_per_1000).toFixed(2)
+          ];
+
+          values.forEach(value => {
+
+            const cell =
+              document.createElement('td');
+
+            cell.textContent = value;
+
+            row.appendChild(cell);
+
+          });
+
+          tbody.appendChild(row);
+
+        });
+
+      })
+
+      .catch(error => {
+
+        document.getElementById(
+          'supply-status'
+        ).textContent =
+          'Error loading commune data: ' + error.message;
+
+        console.error(error);
+
+      });
+
+  </script>
+
 </body>
 </html>
