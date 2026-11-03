@@ -24,6 +24,44 @@
   <canvas id="delayChart" height="320"></canvas>
   <p id="updated"></p>
 
+<section id="supply-section" style="margin-top: 3rem;">
+  <h2>Transport Supply vs Population</h2>
+
+  <p>
+    Comparison of scheduled public transport stop-visits
+    per 1,000 residents across Le Mans Metropole's 20 communes.
+  </p>
+
+  <p style="color: #666; font-size: 0.9rem;">
+    Population is used as a proxy for demand.
+    This indicator does not measure actual ridership.
+  </p>
+
+  <div id="supply-status">Loading commune data...</div>
+
+  <div style="overflow-x: auto;">
+    <canvas id="supplyChart" height="450"></canvas>
+  </div>
+
+  <h3>Commune Ranking</h3>
+
+  <div style="overflow-x: auto;">
+    <table id="supplyTable" style="width: 100%;
+      border-collapse: collapse; text-align: left;">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Commune</th>
+          <th>Population</th>
+          <th>Daily stop-visits</th>
+          <th>Per 1,000 residents</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
 <script>
 fetch('data/current_state.json')
   .then(r => r.json())
@@ -106,6 +144,99 @@ fetch('data/current_state.json')
       '<p>Could not load network status (' + err + '). Check that ' +
       '<code>docs/data/current_state.json</code> exists in the repo.</p>';
   });
+  
+<script>
+fetch('data/supply_population.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Unable to load commune data');
+    }
+    return response.json();
+  })
+  .then(data => {
+    const communes = [...data].sort(
+      (a, b) => b.supply_per_1000 - a.supply_per_1000
+    );
+
+    document.getElementById('supply-status').textContent =
+      `${communes.length} communes analyzed`;
+
+    // Horizontal bar chart
+    new Chart(document.getElementById('supplyChart'), {
+      type: 'bar',
+      data: {
+        labels: communes.map(c => c.commune),
+        datasets: [{
+          label: 'Scheduled stop-visits per 1,000 residents',
+          data: communes.map(c => c.supply_per_1000),
+          backgroundColor: communes.map((c, i) =>
+            i < 3 ? '#16866e' :
+            i >= communes.length - 3 ? '#e68a52' :
+            '#49a7d8'
+          ),
+          borderRadius: 4
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Transport Supply per 1,000 Residents'
+          }
+        },
+        scales: {
+          x: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Scheduled stop-visits / 1,000 residents'
+            }
+          }
+        }
+      }
+    });
+
+    // Commune ranking table
+    const tbody = document.querySelector('#supplyTable tbody');
+
+    communes.forEach((c, index) => {
+      const tr = document.createElement('tr');
+
+      const values = [
+        index + 1,
+        c.commune,
+        c.population,
+        c.daily_supply,
+        c.supply_per_1000.toFixed(2)
+      ];
+
+      values.forEach(value => {
+        const td = document.createElement('td');
+        td.textContent = value;
+        td.style.padding = '10px';
+        td.style.borderBottom = '1px solid #ddd';
+        tr.appendChild(td);
+      });
+
+      tbody.appendChild(tr);
+    });
+
+    document.querySelectorAll('#supplyTable th').forEach(th => {
+      th.style.padding = '10px';
+      th.style.borderBottom = '2px solid #16866e';
+    });
+  })
+  .catch(error => {
+    document.getElementById('supply-status').textContent =
+      'Error loading commune data: ' + error.message;
+    console.error(error);
+  });
+</script>
+
 </script>
 </body>
 </html>
