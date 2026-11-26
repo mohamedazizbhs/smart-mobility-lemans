@@ -1,66 +1,36 @@
 {
-  "generated_at": "2026-11-25T20:39:02Z",
-  "network_avg_delay_s": -11.3,
-  "n_routes_reporting": 6,
+  "generated_at": "2026-11-26T03:13:09Z",
+  "network_avg_delay_s": 0.0,
+  "n_routes_reporting": 3,
   "routes": [
     {
-      "route_id": "7",
+      "route_id": "T1",
       "n_trips_observed": 2,
       "n_stop_updates": 48,
       "n_skipped": 0,
-      "avg_delay_s": 12.6,
-      "max_delay_s": 315,
-      "snapshot_ts": 1795639142,
-      "route_name": "7"
-    },
-    {
-      "route_id": "C4",
-      "n_trips_observed": 10,
-      "n_stop_updates": 305,
-      "n_skipped": 0,
-      "avg_delay_s": 0.4,
-      "max_delay_s": 163,
-      "snapshot_ts": 1795639142,
-      "route_name": "C4"
-    },
-    {
-      "route_id": "T1",
-      "n_trips_observed": 17,
-      "n_stop_updates": 408,
-      "n_skipped": 0,
-      "avg_delay_s": -11.8,
-      "max_delay_s": 111,
-      "snapshot_ts": 1795639142,
+      "avg_delay_s": 0.0,
+      "max_delay_s": 0,
+      "snapshot_ts": 1795662789,
       "route_name": "T1"
     },
     {
-      "route_id": "5",
-      "n_trips_observed": 7,
-      "n_stop_updates": 193,
-      "n_skipped": 20,
-      "avg_delay_s": -17.5,
-      "max_delay_s": 128,
-      "snapshot_ts": 1795639142,
-      "route_name": "5"
-    },
-    {
       "route_id": "T2",
-      "n_trips_observed": 14,
-      "n_stop_updates": 252,
+      "n_trips_observed": 2,
+      "n_stop_updates": 36,
       "n_skipped": 0,
-      "avg_delay_s": -24.5,
-      "max_delay_s": 75,
-      "snapshot_ts": 1795639142,
+      "avg_delay_s": 0.0,
+      "max_delay_s": 0,
+      "snapshot_ts": 1795662789,
       "route_name": "T2"
     },
     {
       "route_id": "T3",
-      "n_trips_observed": 10,
-      "n_stop_updates": 140,
+      "n_trips_observed": 2,
+      "n_stop_updates": 28,
       "n_skipped": 0,
-      "avg_delay_s": -26.8,
-      "max_delay_s": 32,
-      "snapshot_ts": 1795639142,
+      "avg_delay_s": 0.0,
+      "max_delay_s": 0,
+      "snapshot_ts": 1795662789,
       "route_name": "T3"
     }
   ],
